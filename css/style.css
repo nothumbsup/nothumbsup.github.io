@@ -1,0 +1,732 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(248, 236, 236, 0.651);
+}
+
+.mgleft0 {
+  margin-left: 0;
+}
+
+.lastlink {
+  color: #8f1cfa;
+  border: 2px solid #8f1cfa;
+  border-radius: 30px;
+  -webkit-transition: background 0.3s, color 0.3s;
+  transition: background 0.3s, color 0.3s;
+}
+
+.lastlink:hover {
+  background: #8f1cfa;
+  color: #fff;
+}
+
+.bg1 {
+  background-image: url(../img/project1.png);
+}
+
+.bg2 {
+  background-image: url(../img/project2.png);
+}
+
+.bg3 {
+  background-image: url(../img/project3.png);
+}
+
+.pt1 {
+  background-image: url(../img/partner1.png);
+}
+
+.pt2 {
+  background-image: url(../img/partner2.png);
+}
+
+.pt3 {
+  background-image: url(../img/partner3.png);
+}
+
+.order {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.cleaner {
+  clear: both;
+}
+
+#up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  background-color: #4e2e8a;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+}
+
+#up span {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/*-----------------------------------HEADER-----------------------------*/
+header {
+  min-height: 100vh;
+  position: relative;
+  z-index: 3;
+  background-color: #191a1d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 70px;
+}
+
+header #logo {
+  margin-left: 15%;
+}
+
+header #logo h1 {
+  font-family: 'Trade Winds', cursive;
+  font-weight: normal;
+  font-size: 40px;
+  color: #e6d9d9;
+  -webkit-text-stroke: 1px #000;
+  text-shadow: 1px 2px 0 #6f34dd;
+}
+
+header nav {
+  margin-right: 15%;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 22px;
+  color: rgba(248, 236, 236, 0.651);
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  padding: 15px;
+}
+
+header nav ul li:hover {
+  color: #fff;
+}
+
+header section {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header section h2 {
+  font-size: 55px;
+  color: rgba(248, 236, 236, 0.651);
+  text-align: center;
+  margin: 40px 0;
+}
+
+header section p {
+  font-size: 22px;
+  color: rgba(248, 236, 236, 0.651);
+  text-align: center;
+}
+
+header section p:last-child {
+  margin-top: 100px;
+}
+
+header section p:last-child a {
+  padding: 20px;
+  color: #8f1cfa;
+  border: 2px solid #8f1cfa;
+  border-radius: 35px;
+}
+
+/*------------------------------- ABOUT ------------------------------------*/
+#about {
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#about .holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+
+#about .holder div {
+  width: 40%;
+  margin-left: 2%;
+}
+
+#about .holder div h2 {
+  font-size: 40px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 20px;
+}
+
+#about .holder div p {
+  font-size: 22px;
+  line-height: 28px;
+  text-align: justify;
+}
+
+#about .holder div ul {
+  list-style-type: none;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#about .holder div ul li {
+  font-size: 19px;
+  color: rgba(14, 3, 31, 0.7);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#about .holder div ul li span {
+  margin-right: 10px;
+  font-size: 26px;
+  padding: 0 10px;
+  width: 40px;
+  text-align: center;
+}
+
+#about .holder figure {
+  margin-right: 2%;
+}
+
+#about .holder figure img {
+  height: 270px;
+}
+
+/*----------------------------PROJECTS------------------------------------*/
+#projects {
+  margin-top: 110px;
+}
+
+#projects h3 {
+  text-align: center;
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 80px;
+}
+
+#projects #sites {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+}
+
+#projects #sites figure {
+  width: 1%;
+  min-height: 230px;
+  max-height: 330px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+#projects #sites figure figcaption {
+  background: rgba(9, 1, 12, 0.9);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  font-size: 20px;
+  padding: 25px 0;
+  bottom: 0;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+#projects #sites figure figcaption a {
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+#projects #sites figure figcaption a:hover {
+  color: white;
+}
+
+/*---------------------------PARTNERS---------------------------*/
+#partners {
+  margin-top: 100px;
+}
+
+#partners h3 {
+  text-align: center;
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 50px;
+}
+
+#partners p {
+  text-align: center;
+  font-size: 20px;
+  margin: 0px auto;
+  width: 70%;
+}
+
+#partners .partnersHolder {
+  width: 70%;
+  margin: 80px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#partners .partnersHolder figure {
+  max-height: 300px;
+  width: 45%;
+  -webkit-box-shadow: 3px 5px 20px rgba(11, 2, 26, 0.7);
+          box-shadow: 3px 5px 20px rgba(11, 2, 26, 0.7);
+  position: relative;
+}
+
+#partners .partnersHolder figure img {
+  height: 100%;
+  width: 100%;
+}
+
+#partners .partnersHolder figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+#partners .partnersHolder figcaption:hover {
+  color: #fff;
+}
+
+#partners .partnersHolder .partner {
+  width: 45%;
+}
+
+#partners .partnersHolder .partner h4 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 27px;
+  margin-bottom: 30px;
+}
+
+#partners .partnersHolder .partner ul {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+#partners .partnersHolder .partner ul li {
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 20px;
+  font-style: italic;
+}
+
+#partners .partnersHolder .partner ul li span {
+  margin-right: 10px;
+  color: rgba(25, 2, 61, 0.7);
+}
+
+@-webkit-keyframes bgcol {
+  50% {
+    background-color: #581a79;
+  }
+}
+
+@keyframes bgcol {
+  50% {
+    background-color: #581a79;
+  }
+}
+
+#contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#contact h3 {
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+
+#contact p {
+  width: 95%;
+  color: rgba(255, 255, 255, 0.67);
+  text-align: center;
+  font-size: 21px;
+  line-height: 35px;
+}
+
+#contact form {
+  width: 30%;
+  margin: 40px 0;
+}
+
+#contact form table {
+  width: 100%;
+}
+
+#contact form table td {
+  padding: 15px 0;
+}
+
+#contact form table input, #contact form table textarea {
+  width: 100%;
+  padding: 30px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.8);
+  border: none;
+  background-color: #fff;
+}
+
+#contact form table input::-webkit-input-placeholder, #contact form table textarea::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+}
+
+#contact form table input:-ms-input-placeholder, #contact form table textarea:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+}
+
+#contact form table input::-ms-input-placeholder, #contact form table textarea::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+}
+
+#contact form table input::placeholder, #contact form table textarea::placeholder {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+}
+
+#contact form table input[type=submit], #contact form table textarea[type=submit] {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #4e2e8a;
+}
+
+#contact form table textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 200px;
+  max-height: 200px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/*-----------------------------FOOTER-------------------------*/
+footer {
+  padding: 40px 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+footer p {
+  text-align: center;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+footer p:last-child {
+  font-size: 20px;
+}
+
+footer ul {
+  list-style-type: none;
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer ul li {
+  margin-left: 30px;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  padding: 15px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #dcd5e7;
+  border-radius: 50%;
+  border: 1px solid white;
+  -webkit-transition: background-color 0.3s, border-color 0.3s;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+footer ul li:hover {
+  background-color: white;
+  border-color: #fff;
+  color: #764cc4;
+}
+
+/*------------------------------RESPONSIVE----------------------------------*/
+@media screen and (max-width: 1500px) {
+  #partners .partnersHolder {
+    width: 80%;
+  }
+  #partners .partnersHolder figure {
+    width: 50%;
+  }
+  #contact form {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 40px;
+  }
+  header #logo {
+    margin: 0;
+  }
+  header nav {
+    margin: 0;
+  }
+  #about .holder div h2 {
+    font-size: 30px;
+  }
+  #about .holder div p {
+    font-size: 18px;
+  }
+  #projects #sites {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #projects #sites figure {
+    width: 75%;
+    max-height: 600px;
+    min-height: 400px;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 2px 5px 10px #191a1d;
+            box-shadow: 2px 5px 10px #191a1d;
+  }
+  #partners .partnersHolder {
+    width: 90%;
+  }
+  #partners .partnersHolder figure {
+    width: 60%;
+  }
+  #partners .partnersHolder .partner {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #about .holder div {
+    width: 60%;
+    margin: 0;
+  }
+  #about .holder figure img {
+    height: 170px;
+  }
+  #partners .partnersHolder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #partners .partnersHolder .partner {
+    margin-bottom: 30px;
+    width: 80%;
+  }
+  #partners .partnersHolder figure {
+    width: 80%;
+  }
+  #contact form {
+    width: 85%;
+  }
+  #projects #sites figure {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header nav {
+    margin: 0;
+  }
+  header nav ul li {
+    margin-left: 8px;
+    font-size: 17px;
+    padding: 8px;
+  }
+  header section h2 {
+    font-size: 40px;
+  }
+  #about {
+    margin-top: 50px;
+  }
+  #about .holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #about .holder div {
+    width: 80%;
+  }
+  #projects #sites figure {
+    width: 100%;
+    min-height: 300px;
+  }
+  #partners .partnersHolder {
+    width: 100%;
+  }
+  #partners .partnersHolder .partner {
+    width: 90%;
+  }
+  #partners .partnersHolder figure {
+    width: 100%;
+  }
+  footer p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header nav ul li {
+    margin-left: 4px;
+    font-size: 14px;
+    padding: 5px;
+  }
+  header nav ul li:first-child {
+    margin: 0;
+  }
+  header section h2 {
+    font-size: 30px;
+  }
+  header section p {
+    font-size: 17px;
+  }
+  #projects #sites figure {
+    min-height: 250px;
+  }
+  #contact form {
+    width: 100%;
+  }
+  #contact h3 {
+    font-size: 35px;
+  }
+  #contact p {
+    font-size: 17px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
